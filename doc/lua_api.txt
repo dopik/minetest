@@ -3380,7 +3380,7 @@ These functions return the leftover itemstack.
       into string form readable by `minetest.deserialize`
     * Example: `serialize({foo='bar'})`, returns `'return { ["foo"] = "bar" }'`
 * `minetest.deserialize(string)`: returns a table
-    * Convert a string returned by `minetest.deserialize` into a table
+    * Convert a string returned by `minetest.serialize` into a table
     * `string` is loaded in an empty sandbox environment.
     * Will load functions, but they cannot access the global environment.
     * Example: `deserialize('return { ["foo"] = "bar" }')`, returns `{foo='bar'}`
